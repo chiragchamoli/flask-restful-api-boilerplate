@@ -1,0 +1,12 @@
+server {
+    listen 80 default_server;
+    listen 443 ssl;
+    server_name SERVER_NAME 0.0.0.0.;
+    ssl_certificate /home/ubuntu/api-server/keys/server/origin.pem;
+    ssl_certificate_key /home/ubuntu/api-server/keys/server/private.pem;
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix://home/ubuntu/api-server/api.sock;
+    }
+}

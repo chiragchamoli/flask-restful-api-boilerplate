@@ -1,5 +1,7 @@
 ---
 local_certs:
-  crt: '/home/api/ssl_local/localhost.crt'
-  key: '/home/api/ssl_local/localhost.key'
+  crt: '/Users/chiragchamoli/PycharmProjects/flask-restful-api-boilerplate/ssl/local
+/localhost.crt'
+  key: '/Users/chiragchamoli/PycharmProjects/flask-restful-api-boilerplate/ssl/local
+/localhost.key'
 token_name: 'x-api-key'

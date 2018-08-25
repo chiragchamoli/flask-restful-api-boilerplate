@@ -38,9 +38,9 @@ This is boilerplate template for a Python Flask application with things you need
 
 ## Getting started 
 
-here
+1. Please update ```globals.yaml``` file
 
 ## Screenshot 
 
-![](https://i.imgur.com/VEYckzn.jpg)
+![](https://via.placeholder.com/800x600?text=TBD)
 

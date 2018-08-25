@@ -1,13 +1,9 @@
 # Author: Chirag Chamoli
 # -*- coding: utf-8 -*-
 
-from flask import request
-import logging
 import os
 import yaml
-
-from aahho.application import application as app
-import aahho.framework.routes
+from framework.application import application as app
 
 with open('globals.yaml', 'r') as f:
     globals = yaml.load(f)
@@ -22,7 +18,6 @@ if __name__ == "__main__":
         if env in possible_envs :
             pass
         else:
-            # app.logger.error("Environment is set incorrectly!.")
             server_shutdown("Please configure environment properly!.")
 
         if env == 'local':
